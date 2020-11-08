@@ -7,5 +7,6 @@ import org.junit.runners.Suite;
 @Suite.SuiteClasses({
         ColorTestInitialRow.class,
         ColorTestInitialColor.class,
+        StateTest.class,
 })
 public class AllTest { }
