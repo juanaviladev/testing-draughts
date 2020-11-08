@@ -13,5 +13,6 @@ import org.junit.runners.Suite;
         TurnTest.class,
         GetCoordinateFormatTest.class,
         PawnTest.class,
+        DraughtTest.class,
 })
 public class AllTest { }
