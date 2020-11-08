@@ -8,5 +8,9 @@ import org.junit.runners.Suite;
         ColorTestInitialRow.class,
         ColorTestInitialColor.class,
         StateTest.class,
+        DirectionTest.class,
+        CoordinateTest.class,
+        TurnTest.class,
+        GetCoordinateFormatTest.class,
 })
 public class AllTest { }
