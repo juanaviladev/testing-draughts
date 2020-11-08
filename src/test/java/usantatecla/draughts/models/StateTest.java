@@ -2,7 +2,6 @@ package usantatecla.draughts.models;
 
 import org.junit.Before;
 import org.junit.Test;
-import usantatecla.draughts.models.builders.StateBuilder;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
