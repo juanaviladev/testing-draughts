@@ -28,14 +28,6 @@ public class ColorTestInitialColor {
         });
     }
 
-    private static Coordinate inTheMiddleBlackCell() {
-        return new Coordinate(4,4);
-    }
-
-    private static Coordinate firstRowBlankCell() {
-        return new Coordinate(0,0);
-    }
-
     @Test
     public void testGetInitialColor() {
         //when
@@ -43,6 +35,14 @@ public class ColorTestInitialColor {
 
         //then
         assertEquals(expectedInitialColor, actualResult);
+    }
+
+    private static Coordinate inTheMiddleBlackCell() {
+        return new Coordinate(4,4);
+    }
+
+    private static Coordinate firstRowBlankCell() {
+        return new Coordinate(0,0);
     }
 
     private static Coordinate firstRowBlackCell() {

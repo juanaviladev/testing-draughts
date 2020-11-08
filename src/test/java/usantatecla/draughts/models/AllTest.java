@@ -6,5 +6,6 @@ import org.junit.runners.Suite;
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
         ColorTestInitialRow.class,
+        ColorTestInitialColor.class,
 })
 public class AllTest { }
