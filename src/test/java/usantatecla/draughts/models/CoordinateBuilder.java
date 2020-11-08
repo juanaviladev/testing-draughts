@@ -1,4 +1,4 @@
-package usantatecla.draughts.models.builders;
+package usantatecla.draughts.models;
 
 public class CoordinateBuilder {
 
