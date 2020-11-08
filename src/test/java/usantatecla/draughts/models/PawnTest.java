@@ -89,6 +89,18 @@ public class PawnTest {
     }
 
     @Test
+    public void shouldReturnErrorIfAdvancingOnReverse() {
+        Coordinate origin = new Coordinate(0, 0);
+        Coordinate target = new Coordinate(2, 2);
+
+        Error actualError = this.whitePawn.isCorrectMovement(
+                emptyList(), 0, origin, target
+        );
+
+        assertThat(actualError, is(equalTo(Error.NOT_ADVANCED)));
+    }
+
+    @Test
     public void shouldReturnNullWhenMovementIsCorrect() {
         Coordinate origin = new Coordinate(0, 0);
         Coordinate target = new Coordinate(1, 1);
