@@ -9,5 +9,6 @@ import usantatecla.draughts.models.ColorTestInitialRow;
         StartControllerTest.class,
         ResumeControllerTest.class,
         CancelControllerTest.class,
+        MoveControllerTest.class,
 })
 public class AllTest { }
