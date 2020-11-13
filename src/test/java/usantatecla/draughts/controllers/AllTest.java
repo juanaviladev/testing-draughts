@@ -6,6 +6,6 @@ import usantatecla.draughts.models.ColorTestInitialRow;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
-        StartController.class,
+        StartControllerTest.class,
 })
 public class AllTest { }
