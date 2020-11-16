@@ -13,7 +13,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.mockito.Mockito.verify;
 import static org.mockito.MockitoAnnotations.initMocks;
 
-public class CancelControllerTest {
+public class CancelControllerTest extends ControllerTest {
 
     private CancelController controller;
 
@@ -22,9 +22,6 @@ public class CancelControllerTest {
 
     private State state;
 
-    @Mock
-    private InteractorControllersVisitor visitor;
-
     @Before
     public void setUp() {
         initMocks(this);
@@ -32,14 +29,10 @@ public class CancelControllerTest {
         this.controller = new CancelController(game, state);
     }
 
-    @Test(expected = AssertionError.class)
-    public void shouldThrowErrorIfGameIsNull() {
-        new StartController(null, state);
-    }
 
-    @Test(expected = AssertionError.class)
-    public void shouldThrowErrorIfStateIsNull() {
-        new StartController(game, null);
+    @Override
+    protected Controller createSUT(Game game, State state) {
+        return new CancelController(game, state);
     }
 
     @Test

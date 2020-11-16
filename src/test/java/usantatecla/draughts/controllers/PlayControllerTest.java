@@ -16,7 +16,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.mockito.Mockito.*;
 import static org.mockito.MockitoAnnotations.initMocks;
 
-public class PlayControllerTest {
+public class PlayControllerTest extends ControllerTest {
 
     @InjectMocks
     private PlayController controller;
@@ -35,14 +35,9 @@ public class PlayControllerTest {
         initMocks(this);
     }
 
-    @Test(expected = AssertionError.class)
-    public void shouldThrowErrorIfGameIsNull() {
-        new StartController(null, state);
-    }
-
-    @Test(expected = AssertionError.class)
-    public void shouldThrowErrorIfStateIsNull() {
-        new StartController(game, null);
+    @Override
+    protected Controller createSUT(Game game, State state) {
+        return new PlayController(game, state);
     }
 
     @Test(expected = AssertionError.class)
